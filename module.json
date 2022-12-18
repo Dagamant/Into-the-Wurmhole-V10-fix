@@ -1,0 +1,82 @@
+{
+  "id": "into-the-wurmhole",
+  "title": "Into the Wurmhole",
+  "description": "Into the Wurmhole is a disgusting adventure set in the Vast Grimm universe. This intro adventure includes everything you need to play, except the dice. Try not to die, but more importantly, do your best not to get infected and become one of The Grimm.",
+  "version": "1.1.0",
+  "compatibility": {
+    "minimumCoreVersion": 10,
+    "compatibleCoreVersion": "10.120",
+    "compatibility": {
+      "minimum": 10,
+      "verified": "10.120",
+      "maximum": 10
+    }
+  },
+    "authors": [
+    {
+      "name": "Brian Colin",
+      "discord": "briancolin#5806"
+    }
+  ],
+  "relationships": {
+    "systems": [{
+      "id": "vastgrimm",
+      "name": "vastgrimm",
+      "type": "system",
+      "manifest": "https://github.com/fvtt-fria-ligan/vastgrimm-foundry-vtt/releases/download/1.0.1/system.json",
+      "compatibility": {
+        "verified": "1.0.1"
+      }
+    }],
+    "requires": [{
+      "id": "scene-packer",
+      "name":"Scene Packer",
+      "type": "module",
+      "manifest": "https://raw.githubusercontent.com/League-of-Foundry-Developers/scene-packer/main/module.json",
+      "compatibility": {
+        "verified": "2.6.11"
+      }
+    }]
+  },
+  "packs": [
+    {
+      "id": "into-the-wurmhole-actors",
+      "name": "into-the-wurmhole-actors",
+      "label": "Into the Wurmhole (Actors)",
+      "path": "/packs/into-the-wurmhole-actors.db",
+      "type": "Actor",
+      "system": "vastgrimm"
+    },
+    {
+      "id": "into-the-wurmhole-journal-entries",
+      "name": "into-the-wurmhole-journal-entries",
+      "label": "Into the Wurmhole (Journal Entries)",
+      "path": "/packs/into-the-wurmhole-journal-entries.db",
+      "type": "JournalEntry",
+      "system": "vastgrimm"
+    },
+    {
+      "id": "into-the-wurmhole-roll-tables",
+      "name": "into-the-wurmhole-roll-tables",
+      "label": "Into the Wurmhole (Roll Tables)",
+      "path": "/packs/into-the-wurmhole-roll-table.db",
+      "type": "RollTable",
+      "system": "vastgrimm"
+    },
+     {
+      "id": "into-the-wurmhole-scenes",
+      "name": "into-the-wurmhole-scenes",
+      "label": "Into the Wurmhole (Scenes)",
+      "path": "/packs/into-the-wurmhole-scenes.db",
+      "type": "Scene",
+      "system": "vastgrimm"
+    }
+  ],
+  "esmodules": [
+    "./scripts/module.js"
+      ],  
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "manifestPlusVersion": "1.2.0"
+}
